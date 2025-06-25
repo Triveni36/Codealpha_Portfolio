@@ -17,6 +17,16 @@ This is a personal Portfolio Website built using HTML, CSS, and JavaScript. It s
 
 📸 Screenshot
 
+![SS](Screenshots/1(1).png)
+
+![SS](Screenshots/2.png)
+
+![SS](Screenshots/3.png)
+
+![SS](Screenshots/4.png)
+
+![SS](Screenshots/5.png)
+
 💡 How to Use
 * Clone or download the repository.
 * Open the index.html file in your browser.
