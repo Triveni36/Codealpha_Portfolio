@@ -1,0 +1,254 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tasks</title>
+</head>
+<body>
+
+<section id="calculator">
+
+ <center><h2 style="color:red">Calculator</h2></center>
+  <div class="calc">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      
+      <button onclick="press('9')">9</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('7')">7</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('4')">4</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('1')">1</button>
+      <button onclick="press('0')">0</button>
+      <button onclick="press('+')">+</button>
+      <button onclick="press('*')">*</button>
+      <button onclick="press('-')">-</button>
+      <button onclick="press('/')">/</button>
+      <button onclick="press('**')">exp</button>
+
+      <button onclick="calculate()">=</button>
+      <button onclick="clearDisplay()">AC</button>
+    </div>
+  </div>
+</section>
+<style>
+.calc {
+  max-width: 240px;
+  margin: 20px auto;
+  padding: 15px;
+  background:linear-gradient(0deg,rgba(248, 46, 248, 0.766),rgba(238, 110, 163, 0.752),rgba(107, 201, 238, 0.752),rgba(200, 226, 122, 0.752),white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.calc input {
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 2px;
+  
+  border-radius: 5px;
+  border: 1px solid linear-gradient(120deg,black,gray,white); 
+}
+.buttons button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 18px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.buttons button:hover {
+  background-color: #555;
+}
+</style>
+<script>
+let display = document.getElementById('display');
+function press(val) {
+  display.value += val;
+}
+function clearDisplay() {
+  display.value = '';
+}
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = 'Error';
+  }
+}
+document.addEventListener('keydown', (e) => {
+  if (!isNaN(e.key) || "+-*/.".includes(e.key)) press(e.key);
+  if (e.key === 'Enter') calculate();
+  if (e.key === 'Escape') clearDisplay();
+});
+</script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attractive Calculator</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #d9afd9, #97d9e1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calc {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .calc h2 {
+      text-align: center;
+      color: #e60073;
+      margin-bottom: 20px;
+    }
+
+    #display {
+      width: 100%;
+      height: 50px;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      margin-right:7px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .buttons button {
+      height: 50px;
+      font-size: 20px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: white;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      background-color: #555;
+    }
+
+    .buttons button:active {
+      transform: scale(0.95);
+      background-color: #222;
+    }
+
+    .buttons button.operator {
+      background-color: #ff4081;
+    }
+
+    .buttons button.operator:hover {
+      background-color: #e60073;
+    }
+
+    .buttons button.equal {
+      background-color: #4CAF50;
+    }
+
+    .buttons button.equal:hover {
+      background-color: #388e3c;
+    }
+
+    .buttons button.clear {
+      background-color: #f44336;
+    }
+
+    .buttons button.clear:hover {
+      background-color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <section id="calculator">
+    <div class="calc">
+      <h2>Calculator</h2>
+
+      <div style="margin-right: 20px;">
+      <input type="text" id="display" disabled />
+      </div>
+      <div class="buttons">
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+        <button onclick="press('/') " class="operator">/</button>
+
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+        <button onclick="press('*')" class="operator">*</button>
+
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+        <button onclick="press('-')" class="operator">-</button>
+
+        <button onclick="press('0')">0</button>
+        <button onclick="press('.')">.</button>
+        <button onclick="press('+')" class="operator">+</button>
+        <button onclick="press('**')" class="operator">^</button>
+
+        <button onclick="clearDisplay()" class="clear">AC</button>
+        <button onclick="calculate()" class="equal">=</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let display = document.getElementById('display');
+
+    function press(val) {
+      display.value += val;
+    }
+
+    function clearDisplay() {
+      display.value = '';
+    }
+
+    function calculate() {
+      try {
+        display.value = eval(display.value);
+      } catch {
+        display.value = 'Error';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (!isNaN(e.key) || "+-*/.".includes(e.key)) press(e.key);
+      if (e.key === 'Enter') calculate();
+      if (e.key === 'Escape') clearDisplay();
+    });
+  </script>
+</body>
+</html>
