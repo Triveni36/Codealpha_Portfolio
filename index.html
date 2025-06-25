@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/89df2a4568.js" crossorigin="anonymous"></script>
+
+    <style>
+  #msg {
+    display: block;
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+</style>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p><span style="color: red;">T</span>riveni.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home </a></li>
+                    <li><a href="#about">About </a></li>
+                     <li><a href="#services">Services </a></li>
+                     <li><a href="#portfolio">Portfolio </a></li>
+                     <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I am <span>Triveni Mhettar </span> <br>from Peth Vadgaon</h1>
+            </div>
+        </div>
+    </div>
+   <center><hr></center> 
+    <!-- -----------------------About------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/My.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a dedicated and passionate Computer Science and Information Technology (CSIT) student with a strong interest in web technologies, With a solid foundation in like HTML,CSS and JavaScript. I enjoy building creative, functional, and user-friendly applications. I have hands-on experience in web development using HTML, CSS, and JavaScript, and I am continually expanding my skills in full-stack development and database management systems. I am a quick learner, and someone who thrives in collaborative environments. My goal is to contribute meaningfully to innovative tech projects and continuously grow as a developer by learning from real-world experiences and challenges.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills',this)">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience',this)">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education',this)">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Skilled in UI/UX design with experience in creating user-friendly and visually appealing interfaces using tools.</li>
+                            <li><span>Web design</span><br>Skilled in web design, with hands-on experience in building responsive and user-friendly websites using HTML, CSS, and JavaScript.</li>
+                            <li><span>Bootstrap</span><br> For responsive and mobile-first web design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Cake shop app Wireframe</span><br>Designed a wireframe for a Cake Ordering App focused on user-friendly navigation, showcasing featured cakes, quick order options, and a seamless checkout flow. Used Figma to create clean layouts for home, product, cart, and payment screens.</li>
+                            <li><span>Calculator</span><br>Developed a functional calculator using HTML, CSS, and JavaScript. It supports basic arithmetic operations with a clean and responsive UI, handling real-time input and dynamic output for smooth user interaction.</li>
+                            <li><span>Portfolio website</span><br>Created a personal portfolio website using HTML, CSS, and JavaScript to showcase projects, skills, and contact information. The site features a responsive design, smooth navigation, and interactive elements for an engaging user experience.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in CSIT</span><br>Rajarambapu institute of Technology, Sakharale</li>
+                            <li><span>Higher Education</span><br>Sonai Junior college,Talsande</li>
+                            <li><span>HTML,CSS,React JS Courses</span><br>I have completed React JS and HTML courses on Infosys Springboard, CSS on Hackerrank.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------------services------------------------ -->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web design</h2>
+                        <p>Web Design is the process of planning, creating, and maintaining websites. It involves a mix of visual design, user experience (UX), and technical development to make websites that are both functional and appealing.<br>Here’s a detailed overview of what web design includes, especially from a CSIT student perspective:<br><br><ul><li>Layout – Organizing content in a clear and accessible way (using CSS Grid, Flexbox, Bootstrap, etc.).</li><li>Color Scheme – Choosing colors that reflect the brand or topic while ensuring readability and visual harmony.</li><li>Responsiveness – Ensuring the site works well on all devices (phones, tablets, desktops).</li></ul></p>
+                        <a href="#" >Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX design</h2>
+                        <p>UI/UX Design plays a vital role in creating effective and engaging digital experiences. UI (User Interface) focuses on the visual aspects of a product — such as layout, colors, typography, and interactive elements — ensuring that users can interact with a website or app in a visually pleasing and intuitive way. On the other hand, UX (User Experience) is about the overall feel and usability of the product, aiming to provide a seamless and meaningful experience to the user by understanding their needs, behavior, and expectations. Together, UI and UX design ensure that digital products are not only aesthetically attractive but also easy to use and navigate. As a CSIT student, learning UI/UX skills enhances your ability to design user-centered websites or applications that are both functional and appealing, making you stand out in the web development and software industry.</p>
+                        <a href="#" >Learn more</a>
+                    </div>
+
+                <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App design</h2>
+                        <p>App Design is a crucial aspect of developing successful mobile or desktop applications, combining both UI (User Interface) and UX (User Experience) principles to create intuitive, functional, and visually appealing apps. UI in app design deals with the visual layout of the app — including buttons, icons, color schemes, typography, and animations — ensuring that users can interact with the app smoothly. UX focuses on the overall journey of the user, aiming to provide a seamless, efficient, and satisfying experience by understanding user behavior and designing workflows that reduce friction. A well-designed app not only looks attractive but also guides users effortlessly through tasks, improving usability and engagement. For CSIT students, mastering app design helps bridge the gap between development and user needs, enabling the creation of applications that are both technically sound and user-friendly.</p>
+                        <a href="#" >Learn more</a>
+                 </div>
+                 </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- -----------------------Portfolio------------------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/calc.png" style="height: 80%;">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>This project is a simple web-based Calculator built using HTML, CSS, and JavaScript. The calculator performs basic arithmetic operations such as addition, subtraction, multiplication, and division. It features a clean and responsive user interface where users can interact using on-screen buttons. The layout is designed using HTML for structure and styled with CSS for visual appeal, including button alignment, colors, and hover effects. JavaScript handles all the logic, including capturing user input, performing calculations, and displaying results dynamically. This project helps beginners understand DOM manipulation, event handling, and basic logic implementation, making it a great practice task for CSIT or web development students.</p>
+                            <a href="Calc/calculator/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/travel.png" style="height:80%;width: 100%;">
+                         <div class="layer">
+                            <h3>Travel Website</h3>
+                            <p>This project is a user-friendly Travel Website designed to help users explore and plan their trips efficiently. Developed with a strong emphasis on UI/UX principles, the website offers features such as destination search, booking functionalities, travel guides, and user-generated reviews. The design focuses on intuitive navigation, visually engaging elements, and responsive layouts to ensure a seamless user experience across desktops, tablets, and mobile browsers.<br>The website interface includes interactive components such as search bars, calendar-based date pickers, destination filters, and embedded maps. Wireframing and prototyping were carried out using design tools like Figma or Adobe XD to ensure a smooth design-to-development process. This project showcases real-world applications of user interface and user experience strategies, making it an excellent learning experience for students focused on web design, front-end development, or UI/UX design.</p>
+                            <a href="images/Travel Web.pdf" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/1.png" style="height: 80%;">
+                         <div class="layer">
+                            <h3>cake app</h3>
+                            <p>The Cake App is a beautifully designed mobile or web application that allows users to browse, customize, and order cakes from a bakery or cake shop. The app features a user-friendly interface with visually appealing cake categories, detailed product images, prices, and customization options like flavor, size, and toppings. The design ensures a smooth and engaging user experience, including easy navigation, cart management, and secure checkout. Built with a focus on UI/UX design, the app also includes user profiles, order tracking, and feedback/review features. It serves as a perfect project for students interested in e-commerce app development, combining creativity with functionality. This app showcases the integration of real-world user needs into an attractive, interactive design—ideal for CSIT or UI/UX-focused portfolios.</p>
+                            <a href="images/Cake app.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+
+        <!-- -----------------------Contact------------------------ -->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>trivenimhettar@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>9975249798</p>
+                        <div class="socialmedia">
+                            <a href="https://facebook.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://linkedin.com"><i class="fa-brands fa-square-youtube"></i></a>
+
+                        </div>
+                        <a href="Resume.pdf"  download="pdf" class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> copyright @ Triveni, Made with <i class="fa-solid fa-heart"></i> her own.</p>
+            </div>
+         </div>
+
+
+
+
+        <script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname, element) {
+    for (let link of tablinks) {
+      link.classList.remove("active-link");
+    }
+    for (let content of tabcontents) {
+      content.classList.remove("active-tab");
+    }
+    element.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyxbNcuxzS6WGAhxgRwfnsvCSaK9CTLqErxbdDjsL1OZxNHB9MEHxV7Bd-oEFZ_GIlB/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },1000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
